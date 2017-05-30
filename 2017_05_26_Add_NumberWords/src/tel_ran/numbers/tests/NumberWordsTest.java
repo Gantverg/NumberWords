@@ -6,9 +6,9 @@ import org.junit.Test;
 
 import tel_ran.numbers.Gender;
 import tel_ran.numbers.NumberWords;
-import tel_ran.numbers.NumberWordsEnglish;
-import tel_ran.numbers.NumberWordsHebrew;
-import tel_ran.numbers.NumberWordsRussian;
+import tel_ran.numbers.english.NumberWordsEnglish;
+import tel_ran.numbers.hebrew.NumberWordsHebrew;
+import tel_ran.numbers.russian.NumberWordsRussian;
 
 public class NumberWordsTest {
 	

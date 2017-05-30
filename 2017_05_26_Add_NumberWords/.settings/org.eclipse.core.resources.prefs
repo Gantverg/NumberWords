@@ -1,3 +1,5 @@
 eclipse.preferences.version=1
-encoding//src/tel_ran/numbers/NumberWordsHebrew.java=UTF-8
+encoding//src/tel_ran/numbers/hebrew/HebrewDigits.java=UTF-8
+encoding//src/tel_ran/numbers/hebrew/HebrewThousand.java=UTF-8
+encoding//src/tel_ran/numbers/hebrew/NumberWordsHebrew.java=UTF-8
 encoding//src/tel_ran/numbers/tests/NumberWordsTest.java=UTF-8
