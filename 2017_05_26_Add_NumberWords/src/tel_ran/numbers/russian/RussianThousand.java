@@ -3,12 +3,12 @@ package tel_ran.numbers.russian;
 import tel_ran.numbers.Gender;
 
 enum RussianThousand {
-	тысяча(1000l, Gender.FEMININE), 
-	миллион(1000000l, Gender.MASCULINE), 
-	миллиард(1000000000l, Gender.MASCULINE), 
-	триллион(1000000000000l, Gender.MASCULINE), 
+	квинтиллион(1000000000000000000l, Gender.MASCULINE),
 	квадриллион(1000000000000000l, Gender.MASCULINE), 
-	квинтиллион(1000000000000000000l, Gender.MASCULINE);
+	триллион(1000000000000l, Gender.MASCULINE), 
+	миллиард(1000000000l, Gender.MASCULINE), 
+	миллион(1000000l, Gender.MASCULINE), 
+	тысяча(1000l, Gender.FEMININE);
 	private long value;
 	private Gender gender;
 
