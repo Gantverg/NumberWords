@@ -7,16 +7,12 @@ public class NumberWordsRussian extends NumberWordsLanguage {
 	}
 
 	@Override
-	public String numberInWords(long number, Gender gender) {
-		return generate(number, gender);
-	}
- 
-	@Override
 	public String numberInWords(long number) {
 		return generate(number, Gender.MASCULINE);
 	}
 
-	private String generate(long number, Gender gender) {
+	@Override
+	public String generate(long number, Gender gender) {
 		if(number == 0) return RussianDigits.ноль.name();
 		
 		StringBuilder res = new StringBuilder();

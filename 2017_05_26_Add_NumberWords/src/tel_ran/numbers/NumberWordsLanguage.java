@@ -19,10 +19,4 @@ public abstract class NumberWordsLanguage implements NumberWords {
 		return language;
 	}
 
-
-	@Override
-	public abstract String numberInWords(long number);
-
-	@Override
-	public abstract String numberInWords(long number, Gender gender);
 }

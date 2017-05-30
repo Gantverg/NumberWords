@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import tel_ran.numbers.Gender;
 import tel_ran.numbers.NumberWords;
+import tel_ran.numbers.NumberWordsEnglish;
 import tel_ran.numbers.NumberWordsHebrew;
 import tel_ran.numbers.NumberWordsRussian;
 
@@ -112,5 +113,81 @@ public class NumberWordsTest {
 		assertEquals("מיליון מאתיים שלושים וארבעה אלפים חמש מאות שישים ושבע", numberWords.numberInWords(1234567, Gender.FEMININE));
 		assertEquals("שני מיליונים מאתיים שלושים וארבעה אלפים חמש מאות שישים ושבע", numberWords.numberInWords(2234567, Gender.FEMININE));
 		assertEquals("עשרים וחמישה מיליונים מאתיים שלושים וארבעה אלפים חמש מאות שישים ושבע", numberWords.numberInWords(25234567, Gender.FEMININE));
+	}
+	
+	@Test
+	public void TestNumberWordsEnglish(){
+		NumberWords numberWords = new NumberWordsEnglish();
+		assertEquals ("zero", numberWords.numberInWords (0));
+		assertEquals ("one", numberWords.numberInWords (1));
+		assertEquals ("two", numberWords.numberInWords (2));
+		assertEquals ("three", numberWords.numberInWords (3));
+		assertEquals ("four", numberWords.numberInWords (4));
+		assertEquals ("five", numberWords.numberInWords (5));
+		assertEquals ("six", numberWords.numberInWords (6));
+		assertEquals ("seven", numberWords.numberInWords (7));
+		assertEquals ("eight", numberWords.numberInWords (8));
+		assertEquals ("nine", numberWords.numberInWords (9));
+		assertEquals ("ten", numberWords.numberInWords (10));
+		assertEquals ("eleven", numberWords.numberInWords (11));
+		assertEquals ("twelve", numberWords.numberInWords (12));
+		assertEquals ("thirteen", numberWords.numberInWords (13));
+		assertEquals ("fourteen", numberWords.numberInWords (14));
+		assertEquals ("fifteen", numberWords.numberInWords (15));
+		assertEquals ("sixteen", numberWords.numberInWords (16));
+		assertEquals ("seventeen", numberWords.numberInWords (17));
+		assertEquals ("eighteen", numberWords.numberInWords (18));
+		assertEquals ("nineteen", numberWords.numberInWords (19));
+		assertEquals ("twenty", numberWords.numberInWords (20));
+		assertEquals ("twenty-one", numberWords.numberInWords (21));
+		assertEquals ("twenty-two", numberWords.numberInWords (22));
+		assertEquals ("twenty-three", numberWords.numberInWords (23));
+		assertEquals ("twenty-four", numberWords.numberInWords (24));
+		assertEquals ("twenty-five", numberWords.numberInWords (25));
+		assertEquals ("twenty-six", numberWords.numberInWords (26));
+		assertEquals ("twenty-seven", numberWords.numberInWords (27));
+		assertEquals ("twenty-eight", numberWords.numberInWords (28));
+		assertEquals ("twenty-nine", numberWords.numberInWords (29));
+		assertEquals ("thirty", numberWords.numberInWords (30));
+		assertEquals ("forty", numberWords.numberInWords (40));
+		assertEquals ("fifty", numberWords.numberInWords (50));
+		assertEquals ("sixty", numberWords.numberInWords (60));
+		assertEquals ("seventy", numberWords.numberInWords (70));
+		assertEquals ("eighty", numberWords.numberInWords (80));
+		assertEquals ("ninety", numberWords.numberInWords (90));
+		assertEquals ("one hundred", numberWords.numberInWords (100));
+		assertEquals ("one hundred and one", numberWords.numberInWords (101));
+		assertEquals ("one hundred and two", numberWords.numberInWords (102));
+		assertEquals ("one hundred and three", numberWords.numberInWords (103));
+		assertEquals ("one hundred and ten", numberWords.numberInWords (110));
+		assertEquals ("one hundred and eleven", numberWords.numberInWords (111));
+		assertEquals ("one hundred and twenty", numberWords.numberInWords (120));
+		assertEquals ("two hundred", numberWords.numberInWords (200));
+		assertEquals ("three hundred", numberWords.numberInWords (300));
+		assertEquals ("four hundred", numberWords.numberInWords (400));
+		assertEquals ("five hundred", numberWords.numberInWords (500));
+		assertEquals ("six hundred", numberWords.numberInWords (600));
+		assertEquals ("seven hundred", numberWords.numberInWords (700));
+		assertEquals ("eight hundred", numberWords.numberInWords (800));
+		assertEquals ("nine hundred", numberWords.numberInWords (900));
+		assertEquals ("nine hundred and fifty-eight", numberWords.numberInWords (958));
+		assertEquals ("one thousand", numberWords.numberInWords (1000));
+		assertEquals ("one thousand two hundred and thirty-four", numberWords.numberInWords (1234));
+		assertEquals ("two thousand", numberWords.numberInWords (2000));
+		assertEquals ("two thousand fifteen", numberWords.numberInWords (2015));
+		assertEquals ("two thousand one hundred", numberWords.numberInWords (2100));
+		assertEquals ("two thousand three hundred and forty-five", numberWords.numberInWords (2345));
+		assertEquals ("five thousand", numberWords.numberInWords (5000));
+		assertEquals ("eleven thousand", numberWords.numberInWords (11000));
+		assertEquals ("fifteen thousand", numberWords.numberInWords (15000));
+		assertEquals ("twenty thousand", numberWords.numberInWords (20000));
+		assertEquals ("two hundred thousand", numberWords.numberInWords (200000));
+		assertEquals ("one million", numberWords.numberInWords (1000000));
+		assertEquals ("two million", numberWords.numberInWords (2000000));
+		assertEquals ("five million three hundred", numberWords.numberInWords (5000300));
+		assertEquals ("five million six hundred and seventy-eight thousand nine hundred and twelve", numberWords.numberInWords(5678912));
+		assertEquals ("nine hundred million eight hundred thousand seven hundred", numberWords.numberInWords (900800700));
+		assertEquals ("fifteen billion", numberWords.numberInWords (15000000000l));
+		assertEquals ("twenty-one trillion", numberWords.numberInWords(21000000000000l));		
 	}
 }

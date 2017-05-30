@@ -11,9 +11,7 @@ public class NumberWordsHebrew extends NumberWordsLanguage {
 		return numberInWords(number, Gender.FEMININE);
 	}
 
-	@Override
-	public String numberInWords(long number, Gender gender) {
-
+	 public String generate(long number, Gender gender) {
 		if(number == 0) return HebrewDigits.אפס.name();
 		StringBuilder res = new StringBuilder();
 		long upperValue = 0;
@@ -32,7 +30,6 @@ public class NumberWordsHebrew extends NumberWordsLanguage {
 			res.append(generateUnderThousand(underValue, gender));
 		}
 		return res.toString().trim();
-		
 	}
 
 	String generateUnderThousand(long number, Gender gender){
