@@ -4,7 +4,7 @@ import tel_ran.numbers.Gender;
 
 enum HebrewDigits{
 	אפס(0, Gender.NEUTER),
-	אחת(1, Gender.FEMININE), אחד(1, Gender.MASCULINE),
+	אחת (1, Gender.FEMININE), אחד (1, Gender.MASCULINE),
 	שתיים(2, Gender.FEMININE), שניים(2, Gender.MASCULINE),
 	שלוש(3, Gender.FEMININE), שלושה(3, Gender.MASCULINE),
 	ארבע(4, Gender.FEMININE), ארבאה(4, Gender.MASCULINE),
